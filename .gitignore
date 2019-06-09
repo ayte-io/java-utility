@@ -1,0 +1,5 @@
+target
+*.jar
+allure-results
+.idea
+*.iml

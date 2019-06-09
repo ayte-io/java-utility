@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.ayte</groupId>
+        <artifactId>twill</artifactId>
+        <version>0.2.5</version>
+    </parent>
+
+    <groupId>io.ayte.utility</groupId>
+    <artifactId>parent</artifactId>
+    <packaging>pom</packaging>
+    <version>0.1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>src/api</module>
+        <module>src/kit</module>
+    </modules>
+
+    <properties>
+        <value.version>0.1.0</value.version>
+        <supplier.version>0.1.0</supplier.version>
+        <fabricator.version>0.1.0</fabricator.version>
+        <task.version>0.1.0</task.version>
+        <action.version>0.1.0</action.version>
+        <predicate.version>0.1.0</predicate.version>
+        <function.version>0.1.0</function.version>
+        <collection.version>0.1.0</collection.version>
+        <string.version>0.1.0</string.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.ayte.utility.value</groupId>
+                <artifactId>api</artifactId>
+                <version>${value.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.ayte.utility.value</groupId>
+                <artifactId>kit</artifactId>
+                <version>${value.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.ayte.utility.supplier</groupId>
+                <artifactId>api</artifactId>
+                <version>${supplier.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.ayte.utility.supplier</groupId>
+                <artifactId>kit</artifactId>
+                <version>${supplier.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.ayte.utility.fabricator</groupId>
+                <artifactId>api</artifactId>
+                <version>${fabricator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.ayte.utility.fabricator</groupId>
+                <artifactId>kit</artifactId>
+                <version>${fabricator.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.ayte.utility.task</groupId>
+                <artifactId>api</artifactId>
+                <version>${task.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.ayte.utility.task</groupId>
+                <artifactId>kit</artifactId>
+                <version>${task.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.ayte.utility.action</groupId>
+                <artifactId>api</artifactId>
+                <version>${action.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.ayte.utility.action</groupId>
+                <artifactId>kit</artifactId>
+                <version>${action.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.ayte.utility.predicate</groupId>
+                <artifactId>api</artifactId>
+                <version>${predicate.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.ayte.utility.predicate</groupId>
+                <artifactId>kit</artifactId>
+                <version>${predicate.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.ayte.utility.function</groupId>
+                <artifactId>api</artifactId>
+                <version>${function.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.ayte.utility.function</groupId>
+                <artifactId>kit</artifactId>
+                <version>${function.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.ayte.utility.collection</groupId>
+                <artifactId>api</artifactId>
+                <version>${collection.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.ayte.utility.collection</groupId>
+                <artifactId>kit</artifactId>
+                <version>${collection.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.ayte.utility.string</groupId>
+                <artifactId>api</artifactId>
+                <version>${string.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.ayte.utility.string</groupId>
+                <artifactId>kit</artifactId>
+                <version>${string.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
